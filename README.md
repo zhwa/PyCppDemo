@@ -6,7 +6,7 @@
 2. Add essential submodules: put all 3rd party libraries in a folder, and manage them with ```git submoudle```.
 
   ```
-  cd third_party\eigen
+  cd third_party
   ```
 
   * [Pybind11](https://github.com/pybind/pybind11)
@@ -25,4 +25,4 @@
   cd ..
   ```
 
-  Other libraries can be added as well.
+  Other libraries like [JSON](https://github.com/nlohmann/json) can be added as well. Note: it's highly recommended to checkout to the latest stable release of each submodule.
