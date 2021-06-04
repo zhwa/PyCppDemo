@@ -11,4 +11,10 @@ PYBIND11_MODULE(PyCppDemo, m)
 	m.def("char_count", &char_count, "Char count in the given string");
 	m.def("inv", &inv, "Inverse a given 2-d matrix.");
 	m.def("det", &det, "Det of a given matrix");
+
+	py::class_<Fraction>(m, "Fraction")
+		.def(py::init<double, double>())
+		.def("mul", &Fraction::mul, "Multiply the faction by given value.")
+		.def("__repr__", [](const Fraction& f) { return f.str(); })
+		.def("print", &Fraction::print);
 }
