@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "MyModule.h"
 
 std::vector<float> square(const std::vector<float>& input) noexcept
@@ -12,4 +13,14 @@ std::vector<float> square(const std::vector<float>& input) noexcept
 		}
 	}
 	return output;
+}
+
+EigenMatrix inv(const EigenMatrix& input) noexcept
+{
+	return input.inverse();
+}
+
+double det(const EigenMatrix& input) noexcept
+{
+	return input.determinant();
 }
