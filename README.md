@@ -54,3 +54,14 @@
     * Properties --> C/C++ --> Precompiled Headers --> Precompiled Header: ```Not Using Precompiled Headers```.
   * If Windows APIs are called, add ```WindowsApp.lib``` into the input of the linker:
     * Properties --> Linker --> Input --> Additional Dependencies: add WindowsApp.lib into the list, separated by ```;```.
+
+## Reuse This Repo
+
+Clone the repo:
+
+```
+git clone https://github.com/zhwa/PyCppDemo.git
+git submodule update --init --recursive
+```
+
+Change the Python NuGet package version: start Python and check the Python version. Right click project --> Manage NuGet Packages... --> Updates --> Version.
