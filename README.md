@@ -61,6 +61,7 @@ Clone the repo:
 
 ```
 git clone https://github.com/zhwa/PyCppDemo.git
+cd PyCppDemo
 git submodule update --init --recursive
 ```
 
