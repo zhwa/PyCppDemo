@@ -39,10 +39,10 @@
   * Install the desired [Python NuGet Package](https://www.nuget.org/packages/python).
   * Add the path to Python headers into additional include path:
     * Properties --> Configuration Properties --> VC++ Directories --> Include Directories
-    * Add $(ProjectDir)packages\python.3.5.4\tools\include
+    * Add $(ProjectDir)packages\python.3.8.10\tools\include
   * Add path to ```python3.lib``` and ```python3X.lib``` to the input of the linker:
     * Properties --> Linker --> Input --> Additional Dependencies
-    * add ```$(ProjectDir)packages\python.3.5.4\tools\libs\python3.lib``` and ```$(ProjectDir)packages\python.3.5.4\tools\libs\python35.lib``` into the list, separated by ```;```.
+    * add ```$(ProjectDir)packages\python.3.8.10\tools\libs\python3.lib``` and ```$(ProjectDir)packages\python.3.8.10\tools\libs\python38.lib``` into the list, separated by ```;```.
 
   A few Windows specific steps:
 
