@@ -14,7 +14,7 @@
   ```
   git submodule add https://gitlab.com/libeigen/eigen.git eigen
   cd eigen
-  git checkout 3.4-rc1
+  git checkout 3.4
   cd ..
   ```
 
@@ -22,7 +22,7 @@
   ```
   git submodule add https://github.com/pybind/pybind11.git pybind11
   cd pybind11
-  git checkout v2.6.2
+  git checkout v2.8.0
   cd ..
   ```
 
