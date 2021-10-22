@@ -10,7 +10,7 @@
   cd third_party
   ```
 
-  * [Pybind11](https://github.com/pybind/pybind11)
+  * [Eigen](https://gitlab.com/libeigen/eigen)
   ```
   git submodule add https://gitlab.com/libeigen/eigen.git eigen
   cd eigen
@@ -18,7 +18,7 @@
   cd ..
   ```
 
-  * [Eigen](https://gitlab.com/libeigen/eigen)
+  * [Pybind11](https://github.com/pybind/pybind11)
   ```
   git submodule add https://github.com/pybind/pybind11.git pybind11
   cd pybind11
@@ -40,7 +40,7 @@
   * Add the path to Python headers into additional include path:
     * Properties --> Configuration Properties --> VC++ Directories --> Include Directories
     * Add $(ProjectDir)packages\python.3.8.10\tools\include
-  * Add path to ```python3.lib``` and ```python3X.lib``` to the input of the linker:
+  * Add path to ```python3.lib``` and ```python38.lib```(replace version number based on your installed Python version) to the input of the linker:
     * Properties --> Linker --> Input --> Additional Dependencies
     * add ```$(ProjectDir)packages\python.3.8.10\tools\libs\python3.lib``` and ```$(ProjectDir)packages\python.3.8.10\tools\libs\python38.lib``` into the list, separated by ```;```.
 
