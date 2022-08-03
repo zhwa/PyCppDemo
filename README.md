@@ -66,3 +66,12 @@ git submodule update --init --recursive
 ```
 
 Change the Python NuGet package version: start Python and check the Python version. Right click project --> Manage NuGet Packages... --> Updates --> Version.
+
+## Other Misc Notes
+
+
+* Choose Windows Desktop Dynamic-Link Library (DLL). Avoid Windows Universal DLL (Universal Windows). Otherwise, the C++ functions won't be exported to Python.
+
+* Set Conformance mode --> No; and Enable Run-Time Type Information --> Yes
+
+* If there are compiler complaints about CRT security: In pch.h --> #define _CRT_SECURE_NO_WARNINGS
